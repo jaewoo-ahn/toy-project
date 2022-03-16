@@ -4,9 +4,9 @@ import "./Card.scss";
 function Card() {
   return (
     <div className="card">
-      <div>title</div>
-      <div>description</div>
-      <div>date</div>
+      <div className="title-box">title</div>
+      <div className="description-box">description</div>
+      <div className="date-box">date</div>
     </div>
   );
 }
