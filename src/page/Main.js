@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../commomComponent/Card";
 import "./Main.scss";
 
 function Main() {
@@ -6,15 +7,15 @@ function Main() {
     <div className="main-container">
       <div className="content-wrapper">
         <div className="gridbox-wrapper">
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>

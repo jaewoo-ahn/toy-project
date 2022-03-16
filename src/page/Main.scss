@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  height: 3000px;
+  margin-bottom: 60px;
 
   .content-wrapper {
     margin-top: 50px;
@@ -14,12 +14,7 @@
     .gridbox-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-      .box1 {
-        background-color: red;
-        width: 300px;
-        height: 300px;
-      }
+      grid-gap: 30px;
     }
   }
 }
