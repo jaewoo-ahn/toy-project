@@ -17,13 +17,6 @@ function Nav() {
     setIsLogin(false);
   };
 
-  const ModalClose = () => {
-    setIsLogin(false);
-    setIsRegister(false);
-  };
-  const StopBubbling = (e) => {
-    e.stopPropagation();
-  };
   return (
     <>
       <div className="Nav-Container">
@@ -39,8 +32,8 @@ function Nav() {
         </div>
       </div>
       {isLogin && (
-        <div className="modal-wrapper" onClick={ModalClose}>
-          <Login onClick={StopBubbling} />
+        <div className="modal-wrapper">
+          <Login />
         </div>
       )}
       {isRegister && (

@@ -1,0 +1,35 @@
+.text-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../image/paul-gilmore-ysA6qL8j-OI-unsplash.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  .text-box {
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 85px 0px;
+    background-color: white;
+    .text-title {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .text-description {
+      height: 408px;
+      border: none;
+    }
+    .text-date {
+      border-top: 1px solid black;
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+}

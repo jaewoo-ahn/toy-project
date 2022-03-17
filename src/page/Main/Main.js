@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../commomComponent/Card";
+import Card from "../../commomComponent/Card";
 import "./Main.scss";
 
 function Main() {
