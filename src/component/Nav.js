@@ -1,14 +1,29 @@
 import React, {useState} from "react";
 import Login from "../commomComponent/LoginRegister/Login";
+import Register from "../commomComponent/LoginRegister/Register";
 import "./Nav.scss";
 
 function Nav() {
   const [isLogin, setIsLogin] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
 
   const LoginModal = () => {
     setIsLogin(!isLogin);
+    setIsRegister(false);
   };
-  console.log(isLogin);
+
+  const RegisterModal = () => {
+    setIsRegister(!isRegister);
+    setIsLogin(false);
+  };
+
+  const ModalClose = () => {
+    setIsLogin(false);
+    setIsRegister(false);
+  };
+  const StopBubbling = (e) => {
+    e.stopPropagation();
+  };
   return (
     <>
       <div className="Nav-Container">
@@ -18,12 +33,19 @@ function Nav() {
           <button className="button" onClick={LoginModal}>
             Login
           </button>
-          <button className="button">Page3</button>
+          <button className="button" onClick={RegisterModal}>
+            Register
+          </button>
         </div>
       </div>
       {isLogin && (
+        <div className="modal-wrapper" onClick={ModalClose}>
+          <Login onClick={StopBubbling} />
+        </div>
+      )}
+      {isRegister && (
         <div className="modal-wrapper">
-          <Login />
+          <Register />
         </div>
       )}
     </>

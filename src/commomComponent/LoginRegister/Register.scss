@@ -1,0 +1,40 @@
+.register-wrapper {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+
+  .register-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 60px;
+  }
+  .register-id {
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+  }
+  .register-password {
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+  }
+  .register-button {
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -11,7 +11,7 @@ function Login() {
         placeholder="Password"
         className="login-password"
       />
-      <button className="login-button" />
+      <button className="login-button">Login</button>
     </div>
   );
 }
