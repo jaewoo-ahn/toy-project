@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import {useLocation} from "react-router";
+import {Link} from "react-router-dom";
 import Login from "../commomComponent/LoginRegister/Login";
 import Register from "../commomComponent/LoginRegister/Register";
 import "./Nav.scss";
@@ -6,6 +8,7 @@ import "./Nav.scss";
 function Nav() {
   const [isLogin, setIsLogin] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
+  const location = useLocation();
 
   const LoginModal = () => {
     setIsLogin(!isLogin);
@@ -17,12 +20,23 @@ function Nav() {
     setIsLogin(false);
   };
 
+  console.log(isLogin, isRegister);
+  console.log(location);
+  const MovingPage = () => {
+    location("/text");
+  };
   return (
     <>
       <div className="Nav-Container">
-        <div className="title">Zues</div>
+        <Link to="/">
+          <div className="title">Zues</div>
+        </Link>
         <div className="nav-button-container">
-          <button className="button">Page1</button>
+          <Link to="/text">
+            <button className="button" onClick={MovingPage}>
+              text{" "}
+            </button>
+          </Link>
           <button className="button" onClick={LoginModal}>
             Login
           </button>

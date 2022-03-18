@@ -4,13 +4,14 @@
   margin-top: 60px;
   margin-bottom: 60px;
   z-index: 1;
+  background-image: url("../../image/paul-gilmore-ysA6qL8j-OI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 
   .content-wrapper {
     margin-top: 50px;
     margin-bottom: 50px;
-
     height: 100%;
-
     .gridbox-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
