@@ -20,8 +20,6 @@ function Nav() {
     setIsLogin(false);
   };
 
-  console.log(isLogin, isRegister);
-  console.log(location);
   const MovingPage = () => {
     location("/text");
   };

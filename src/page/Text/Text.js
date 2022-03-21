@@ -8,6 +8,8 @@ function Text() {
         <input type="text" className="text-title" placeholder="title" />
         <textarea className="text-description"></textarea>
         <input type="date" className="text-date" />
+        <input type="file" className="text-date" />
+        <button>Submit</button>
       </div>
     </div>
   );

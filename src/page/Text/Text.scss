@@ -11,25 +11,30 @@
   .text-box {
     width: 500px;
     height: 500px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 85px 0px;
     background-color: white;
+
     .text-title {
-      font-size: 20px;
+      font-size: 10px;
       padding: 10px;
     }
     .text-description {
       height: 408px;
+      width: 500px;
       border: none;
     }
     .text-date {
-      border-top: 1px solid black;
-      font-size: 20px;
+      font-size: 10px;
       padding: 10px;
+    }
+    button {
+      background-color: lightblue;
+      border: none;
+      cursor: pointer;
     }
   }
 }
