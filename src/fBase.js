@@ -1,17 +1,15 @@
-import * as firebase from "firebase/app";
-import "firebase/auth";
+import {initializeApp} from "firebase/app";
+import {getAnalytics} from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  databaseURL: process.env.REACT_APP_DATABASE_URL,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGIN_ID,
-  appId: process.env.REACT_APP_APP_ID,
+  apiKey: "AIzaSyA6IDrDUscrBnxcaPKIk2t-fczqmWtf8Qw",
+  authDomain: "memoring-63aff.firebaseapp.com",
+  projectId: "memoring-63aff",
+  storageBucket: "memoring-63aff.appspot.com",
+  messagingSenderId: "243951415416",
+  appId: "1:243951415416:web:ba3da23fa716575317bd8d",
+  measurementId: "G-CNNFYE09MH",
 };
 
-firebase.initializeApp(firebaseConfig);
-
-export const firebaseInstance = firebase;
-export const authService = firebase.auth();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

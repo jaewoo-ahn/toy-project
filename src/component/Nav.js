@@ -20,7 +20,7 @@ function Nav() {
     setIsLogin(false);
   };
 
-  const MovingPage = () => {
+  const MovingPage = (e) => {
     location("/text");
   };
   return (
