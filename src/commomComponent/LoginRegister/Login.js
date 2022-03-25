@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import GoogleSignin from "./Google";
+// import GoogleSignin from "./Google";
 import "./Login.scss";
 
 function Login() {
@@ -26,7 +26,7 @@ function Login() {
         />
         <input type="submit" className="login-button" />
       </form>
-      <GoogleSignin />
+      {/* <GoogleSignin /> */}
     </div>
   );
 }
