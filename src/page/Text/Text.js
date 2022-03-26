@@ -15,9 +15,7 @@ function Text() {
   const dateValue = (e) => {
     setIsDate(e.target.value);
   };
-  console.log(istitle);
-  console.log(isDescription);
-  console.log(isDate);
+
   return (
     <div className="text-wrapper">
       <div className="text-box">
