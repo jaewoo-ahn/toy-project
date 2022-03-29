@@ -25,10 +25,7 @@ function Text() {
           placeholder="title"
           onChange={titleValue}
         />
-        <textarea
-          className="text-description"
-          onChange={descriptionValue}
-        ></textarea>
+        <input className="text-description" onChange={descriptionValue}></input>
         <input type="date" className="text-date" onChange={dateValue} />
         <input type="file" className="text-date" />
         <button>Submit</button>
